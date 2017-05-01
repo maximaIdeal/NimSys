@@ -300,7 +300,7 @@ class Nimsys {
 			
 		}
 		
-		for( int i = 0; i < sortLst.size(); i++){
+		for( int i = 0; i < sortLst.size() && i < 10; i++){
 			NimPlayer tmpP = sortLst.get(i);
 			String stringRatio = String.valueOf(tmpP.getRatio()) + "%";
 			System.out.printf("%-5s| %02d games | %s\n",stringRatio ,tmpP.getnGamePlayed(), tmpP.displayFullName());
